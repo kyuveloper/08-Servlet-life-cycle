@@ -69,5 +69,21 @@
         입사일 : <input type="date" name="hireDate"/> <br>
         <input type="submit" value="등록하기"/>
     </form>
+
+    <h3>직원 명단 수정</h3>
+    <form action="${pageContext.servletContext.contextPath}/employees" method="post">
+        수정할 직원의 사번 : <input type="number" name="empIdToUpdate"/>
+        <button type="submit">수정 폼으로 이동</button>
+    </form>
+
+
+    <h3>직원 명단에서 삭제..</h3>
+    <form action="${pageContext.servletContext.contextPath}/employees" method="post">
+        삭제할 직원의 사번 : <input type="number" name="empDelId"/>
+        삭제할 직원의 이름 : <input type="text" name="empDelName"/>
+        <input type="submit" value="삭제하기"/>
+    </form>
+
+
 </body>
 </html>

@@ -13,9 +13,6 @@
             <th>이메일</th>
             <th>전화번호</th>
         </tr>
-        for(String var : stringList){
-            var
-        }
         <c:forEach items="${requestScope.empList}" var="emp">
             <tr>
                 <td>${emp.empId}</td>

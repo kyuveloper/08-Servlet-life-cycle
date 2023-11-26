@@ -62,4 +62,27 @@
         )
     </insert>
 
+    <update id="update" parameterType="com.ohgiraffers.mvc.employee.dto.EmpUpdateDTO">
+        UPDATE EMPLOYEE
+        <set>
+            <if test="empName != null">EMP_NAME = #{empName},</if>
+            <if test="email != null">EMAIL = #{email},</if>
+            <if test="phone != null">PHONE = #{phone},</if>
+            <if test="deptCode != null">DEPT_CODE = #{deptCode},</if>
+            <if test="jobCode != null">JOB_CODE = #{jobCode},</if>
+            <if test="salLevel != null">SAL_LEVEL = #{salLevel},</if>
+            <if test="salary != null">SALARY = #{salary},</if>
+            <if test="bonus != null">BONUS = #{bonus},</if>
+            <if test="managerId != null">MANAGER_ID = #{managerId},</if>
+        </set>
+        WHERE EMP_ID = #{empId}
+    </update>
+
+    <!--값을 받아와 그 값에 해당하는 데이터를 삭제하는 쿼리..-->
+    <delete id="delete" parameterType="com.ohgiraffers.mvc.employee.dto.EmpDeleteDTO">
+        DELETE
+          FROM EMPLOYEE
+         WHERE EMP_NAME = #{empDelName} AND EMP_ID = #{empDelId}
+    </delete>
+
 </mapper>
