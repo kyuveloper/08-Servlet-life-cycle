@@ -70,11 +70,11 @@
         <input type="submit" value="등록하기"/>
     </form>
 
-    <h3>직원 명단 수정</h3>
+    <%--<h3>직원 명단 수정</h3>
     <form action="${pageContext.servletContext.contextPath}/employees" method="post">
         수정할 직원의 사번 : <input type="number" name="empIdToUpdate"/>
         <button type="submit">수정 폼으로 이동</button>
-    </form>
+    </form>--%>
 
 
     <h3>직원 명단에서 삭제..</h3>

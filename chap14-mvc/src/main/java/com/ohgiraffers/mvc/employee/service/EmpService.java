@@ -59,7 +59,7 @@ public class EmpService {
         return result;
     }
 
-    public int update(EmpUpdateDTO update) {
+    /*public int update(EmpUpdateDTO update) {
         SqlSession session = getSession();
 
         empMapper = session.getMapper(EmpMapper.class);
@@ -75,7 +75,7 @@ public class EmpService {
         session.close();
 
         return result;
-    }
+    }*/
 
     public int delete(EmpDeleteDTO delete) {
         SqlSession session = getSession();

@@ -108,7 +108,7 @@ public class SelectEmpServlet extends HttpServlet {
             req.getRequestDispatcher(path).forward(req, resp);
         }
 
-        if (req.getParameter("empIdToUpdate") != null) {
+        /*if (req.getParameter("empIdToUpdate") != null) {
             // 이동할 수정 폼으로 redirect
             resp.sendRedirect(req.getContextPath() + "/employees/update?empId=" + req.getParameter("empIdToUpdate"));
         } else if (req.getParameter("empId") != null) {
@@ -133,7 +133,7 @@ public class SelectEmpServlet extends HttpServlet {
                 req.setAttribute("message", "직원 정보 수정 실패");
             }
             req.getRequestDispatcher(path).forward(req, resp);
-        }
+        }*/
 
     }
 }
